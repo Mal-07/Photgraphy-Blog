@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dusty Roads Voting Booth</title>
+    <style>
+        body {
+            background-color: #9BA2FF;
+            margin: 5%;
+        }
+
+        h1 {
+            background-color: #D7F9F1;
+            font-family: Luicidia Calligraphy;
+            color: #7A542E;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        h2 {
+            color: #7A542E;
+        }
+
+        p {
+            color: #2A2E45;
+        }
+
+        nav {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-top-style: solid;
+            border-top-color: #D7F9F1;
+            border-top-width: medium;
+            border-bottom-style: solid;
+            border-bottom-width: medium;
+            border-bottom-color: #D7F9F1;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+
+
+
+        }
+
+        a {
+            color: #D7F9F1;
+            font-family: cursive;
+        }
+
+        .meet-the-photographer {
+            color: #7A542E;
+
+
+
+        }
+
+        .profile {
+            border: none;
+        }
+
+        .introduction {
+            width: 50%;
+            color: #2A2E45;
+
+        }
+
+        .first-shoot {
+            width: 50%;
+            float: right;
+            text-align: center;
+            color: #2A2E45;
+        }
+
+        .blog {
+            width: 50%;
+            float: left;
+            text-align: center;
+            color: #2A2E45;
+        }
+
+        fieldset {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        .themes {
+            text-align: center;
+        }
+
+        img {
+            height: 70%;
+            width: 70%;
+            margin-top: 5px;
+            border-style: groove;
+            border-width: thick;
+            border-color: #7A542E;
+
+
+        }
+
+        h5 {
+            padding-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px;
+
+
+
+        }
+
+        .external-links {
+            color: #7A542E;
+        }
+
+        .voting-pics {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px;
+            width: 30%
+        }
+
+        .voting-img-headings {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="how-it-works">
+        <h1> Dusy Roads Voting Booth</h1>
+        <div class="navigation-bar">
+            <nav>
+                <a href="Dusty Roads Photography Homepage.html" style="display: inline-block;">
+                    Home</a>
+                <a href="Dusty Roads Voting Booth.html" style="display: inline-block"> Voting</a>
+                <a href="Dusty Roads Links Page.html" style="display: inline-block"> External Links</a>
+                <a href="Dusty Roads Gallery.html" style="display: inline-block"> Gallery</a>
+            </nav>
+        </div>
+        <h2> How it Works:</h2>
+        <p> Once a week I'll upload new photos, and leave them there for you to vote for. Whichever one wins will be
+            inducted into the Gallery!</p>
+        <div class="themes">
+            <p>
+                <label for="types">CATEGORIES:</label><br>
+                <label for="voting">Nature</label><br>
+                <label for="voting">Portraits</label><br>
+                <label for="voting">Animals</label><br>
+                <label for="voting">Miscellaneous</label><br>
+            </p>
+        </div>
+    </div>
+    <div>
+
+        <form action="/form-action-handling-url" method="post">
+            <fieldset>
+                <legend>Voting</legend>
+                <div>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email_adress"><br>
+
+                </div>
+
+                <div>
+                    <label for="types">CATEGORIES:</label><br>
+                    <input type="radio" id="nature" name="categories">
+                    <label for="voting">Nature</label><br>
+                    <input type="radio" id="nature" name="categories">
+                    <label for="voting">Portraits</label><br>
+                    <input type="radio" id="nature" name="categories">
+                    <label for="voting">Animals</label><br>
+                    <input type="radio" id="nature" name="categories">
+                    <label for="voting">Miscellaneous</label><br>
+                    <input type="submit" name="submit" style=" margin-top:5%; margin-left:5%; margin-right:5%">
+
+
+                </div>
+            </fieldset>
+
+        </form>
+
+    </div>
+    <div class="voting-img-headings">
+        <p style="display:inline-block">Nature</p>
+        <p style="display:inline-block">Portrait</p>
+        <p style="display:inline-block">Animals</p>
+        <p style="display:inline-block">Miscellaneous</p>
+    </div>
+    <div class="voting-pics">
+        <img src="C:\Users\emily\OneDrive\Pictures\Saved Pictures\20230405_190857.jpg"><!--Nature-->
+        <img src="C:\Users\emily\OneDrive\Desktop\New folder\IMG_20220430_122043578.jpg"><!--Portrait-->
+        <img src="C:\Users\emily\OneDrive\Desktop\New folder\IMG_20220425_153828749.jpg"><!--Animals-->
+        <img src="C:\Users\emily\OneDrive\Pictures\Wallpaper Cave\Waves Crashing Turtle Beach.jpg"><!--Miscellaneous-->
+    </div>
+</body>
+
+</html>
